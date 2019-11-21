@@ -4,7 +4,8 @@ android {
     compileSdkVersion 28
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
-    
+    buildToolsVersion "28.0.0"
+
     defaultConfig {
         applicationId "codepath.apps.demointroandroid"
         minSdkVersion 21
