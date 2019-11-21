@@ -2,10 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    
     defaultConfig {
         applicationId "codepath.apps.demointroandroid"
         minSdkVersion 21
+        vectorDrawables.useSupportLibrary = true
         targetSdkVersion 28
     }
 
@@ -20,4 +23,6 @@ android {
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.codepath.libraries:asynchttpclient:0.1.0'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+
 }
